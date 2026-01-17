@@ -1,0 +1,21 @@
+{
+  "model": "PSO_Optimized_Hybrid_NCF",
+  "config": {
+    "embedding_dim": 32,
+    "dropout_rate": 0.2022285875998979,
+    "learning_rate": 0.007731627791351254,
+    "batch_size": 2048,
+    "mlp_layers": [
+      512,
+      256,
+      128
+    ]
+  },
+  "best_val_rmse": 0.8680326229817158,
+  "test_rmse": 0.872135840557717,
+  "test_mae": 0.6790036309409786,
+  "baseline_ncf_rmse": 0.9016,
+  "hybrid_ncf_rmse": 0.892,
+  "improvement_vs_baseline": 3.267985741158272,
+  "improvement_vs_hybrid": 2.22692370429182
+}

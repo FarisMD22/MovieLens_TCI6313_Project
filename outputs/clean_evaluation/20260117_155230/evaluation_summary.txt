@@ -1,0 +1,38 @@
+================================================================================
+                         MODEL EVALUATION SUMMARY
+                              MovieLens 1M Dataset
+                         Generated: 2026-01-17 15:52:32
+================================================================================
+
+PERFORMANCE RANKINGS (by Test RMSE):
+--------------------------------------------------------------------------------
+1. 🥇 ANFIS      - RMSE: 0.8681  (+3.72%)
+2. 🥈 PSO        - RMSE: 0.8721  (+3.27%)
+3. 🥉 Hybrid     - RMSE: 0.8920  (+1.07%)
+4.  NCF        - RMSE: 0.9016  (baseline)
+
+
+COMPREHENSIVE METRICS:
+--------------------------------------------------------------------------------
+ Model  Test RMSE  Test MAE  Test Loss  Best Val RMSE  Train RMSE (best epoch)  Generalization Gap  Overfitting (%)  Training Time (min)  Epochs Trained  Best Epoch  Parameters  Improvement vs Baseline (%)
+   NCF     0.9016    0.7032     0.8130         0.8980                   0.9150             -0.0170            -1.86                  1.9              13           8     1387000                         0.00
+Hybrid     0.8920    0.6956     0.7958         0.8888                   0.8913             -0.0025            -0.28                  5.7              15           8     1579000                         1.07
+   PSO     0.8721    0.6790     0.7606         0.8680                   0.8096              0.0584             7.21                  0.0              25          15     1579000                         3.27
+ ANFIS     0.8681    0.6829     0.7539         0.8653                   0.8635              0.0019             0.22                 17.1              50          49         576                         3.72
+
+
+KEY FINDINGS:
+--------------------------------------------------------------------------------
+• Best Model: ANFIS (RMSE: 0.8681)
+• Best Improvement: 3.72%
+• Most Efficient: ANFIS (576 parameters)
+• Lowest Overfitting: NCF (-1.86%)
+• Fastest Training: PSO (0.0 min)
+
+
+NOTE ON NEGATIVE OVERFITTING:
+--------------------------------------------------------------------------------
+Negative overfitting values indicate that validation RMSE is lower than training
+RMSE at the best epoch. This occurs when regularization (like dropout) is active
+during training but disabled during validation. This is actually a GOOD sign,
+indicating effective regularization that prevents overfitting.

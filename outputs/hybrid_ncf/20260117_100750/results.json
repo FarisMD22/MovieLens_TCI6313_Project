@@ -1,0 +1,24 @@
+{
+  "model": "Hybrid_NCF",
+  "embedding_dim_gmf": 64,
+  "embedding_dim_mlp": 64,
+  "mlp_layers": [
+    512,
+    256,
+    128
+  ],
+  "content_dim": 64,
+  "dropout_rate": 0.3,
+  "learning_rate": 0.001,
+  "batch_size": 4096,
+  "n_epochs": 15,
+  "use_content_features": true,
+  "best_val_rmse": 0.888849680488174,
+  "test_loss": 0.7958280073629843,
+  "test_rmse": 0.8920374142157065,
+  "test_mae": 0.6955639897166072,
+  "baseline_rmse": 0.9016,
+  "improvement_percent": 1.0606239778497644,
+  "training_time_minutes": 5.726690216859182,
+  "timestamp": "20260117_100750"
+}

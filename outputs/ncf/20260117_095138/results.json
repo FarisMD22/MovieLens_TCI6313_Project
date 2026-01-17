@@ -1,0 +1,19 @@
+{
+  "model": "NCF",
+  "embedding_dim": 128,
+  "hidden_layers": [
+    256,
+    128,
+    64
+  ],
+  "dropout_rate": 0.3,
+  "learning_rate": 0.001,
+  "batch_size": 4096,
+  "n_epochs": 13,
+  "best_val_rmse": 0.8979930732701276,
+  "test_loss": 0.8130251475282617,
+  "test_rmse": 0.9016251193510519,
+  "test_mae": 0.7031603036700068,
+  "training_time_minutes": 1.9338580290476481,
+  "timestamp": "20260117_095138"
+}
